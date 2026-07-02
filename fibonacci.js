@@ -1,6 +1,10 @@
 function fibs(n) {
   const sequence = [];
 
+  if (n <= 0) {
+    return sequence;
+  }
+
   if (n >= 1) {
     sequence.push(0);
   }
@@ -19,7 +23,7 @@ function fibs(n) {
 }
 
 function fibsRec(n) {
-  if (n === 0) {
+  if (n <= 0) {
     return [];
   }
   if (n === 1) {
