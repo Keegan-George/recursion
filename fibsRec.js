@@ -25,3 +25,5 @@ function fibsRec(n) {
 }
 
 console.log(fibsRec(8));
+
+export { fibsRec };

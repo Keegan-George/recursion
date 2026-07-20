@@ -62,3 +62,5 @@ function merge(arr1, arr2) {
 }
 
 console.log(mergeSort([4, 3, 1, 12, 9, 5, 2, 1]));
+
+export { mergeSort };
