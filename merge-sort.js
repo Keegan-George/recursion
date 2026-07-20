@@ -27,11 +27,11 @@ function merge(arr1, arr2) {
   }
 
   if (i >= arr1.length) {
-    arr3.push(...arr2.slice(j, arr2.length));
+    arr3.push(...arr2.slice(j));
   }
 
   if (j >= arr2.length) {
-    arr3.push(...arr1.slice(i, arr1.length));
+    arr3.push(...arr1.slice(i));
   }
 
   return arr3;
