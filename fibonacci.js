@@ -1,3 +1,10 @@
+/**
+ * Generates the first `n` numbers of the Fibonacci sequence iteratively.
+ *
+ * @param {number} n - The number of Fibonacci values to generate. Must be >= 0.
+ * @returns {number[]} An array containing the first `n` Fibonacci numbers.
+ *
+ */
 function fibs(n) {
   const sequence = [];
 
@@ -22,6 +29,13 @@ function fibs(n) {
   return sequence;
 }
 
+/**
+ * Generates the first `n` numbers of the Fibonacci sequence recursively.
+ *
+ * @param {number} n - The number of Fibonacci values to generate. Must be >= 0.
+ * @returns {number[]} An array containing the first `n` Fibonacci numbers.
+ *
+ */
 function fibsRec(n) {
   if (n <= 0) {
     return [];

@@ -1,3 +1,13 @@
+/**
+ * Performs a merge sort on an array and returns a new sorted array.
+ *
+ * The function recursively splits the array into halves until arrays
+ * of length 1 are reached, then merges those sorted halves back together.
+ *
+ * @param {number[]} arr - The array of numbers to sort.
+ * @returns {number[]} A new array containing the sorted values.
+ *
+ */
 function mergeSort(arr) {
   if (arr.length <= 1) {
     return arr;
@@ -10,6 +20,20 @@ function mergeSort(arr) {
   return merge(mergeSort(left), mergeSort(right));
 }
 
+/**
+ * Merges two sorted arrays into a single sorted array.
+ *
+ * This is the core operation used by merge sort. It compares the
+ * smallest remaining elements of each array and builds a new array
+ * in ascending order.
+ *
+ * Assumes both input arrays are already sorted.
+ *
+ * @param {number[]} arr1 - The first sorted array.
+ * @param {number[]} arr2 - The second sorted array.
+ * @returns {number[]} A new sorted array containing all elements from arr1 and arr2.
+ *
+ */
 function merge(arr1, arr2) {
   const arr3 = [];
 
